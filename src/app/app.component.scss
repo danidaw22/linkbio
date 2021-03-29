@@ -1,0 +1,67 @@
+@import "../styles.scss";
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.dark {
+    background-color: #000;
+    p {
+        color: #fff
+    }
+    .myRed {
+        -webkit-box-shadow: 13px 9px 5px -2px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 13px 9px 5px -2px rgba(255, 255, 255, 0.75);
+        box-shadow: 13px 9px 5px -2px rgba(255, 255, 255, 0.75);
+        background-color: #3e3e3e;
+    }
+    .myLinks {
+        color: #fff;
+    }
+}
+
+.light {
+    background-color: rgb(245, 245, 244);
+}
+
+.iconosRedes {
+    width: 64px;
+    margin-right: 10px;
+}
+
+.myLinks {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.my-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    .biografia {
+        font-weight: 100;
+    }
+    img {
+        border-radius: 50%;
+        width: 150px;
+    }
+}
+
+.changeMode {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.myRed {
+    padding: 20px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 13px 9px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 9px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 9px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+span.destacado {
+    color: $destacado;
+}
