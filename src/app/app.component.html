@@ -1,6 +1,9 @@
 <div class="main-container" [ngClass]="{'dark': darkMode, 'light': !darkMode}">
     <div class="changeMode float-end">
-        <img src="assets/images/dark-light.svg" (click)="changeMode(mode)" #mode>
+        <!--<img src="assets/images/dark-light.svg" (click)="changeMode(mode)" #mode>-->
+        <a id="iconsmode">
+            <fa-icon [icon]="icDark" (click)="changeMode(mode)" #mode></fa-icon>
+        </a>
     </div>
     <div class="container ">
         <div class="row ">
@@ -11,7 +14,10 @@
             </div>
             <div class="col-12 ">
                 <div *ngFor="let item of myRedes " class="col-4 offset-md-4 myRed card ">
-                    <a class="myLinks " href="{{ item.enlace }} "><img class="iconosRedes " src="assets/images/{{ item.image }} ">{{item.name }}</a>
+                    <!--<a class="myLinks " href="{{ item.enlace }} "><img class="iconosRedes " src="assets/images/{{ item.image }} ">{{item.name }}</a>-->
+                    <a class="myLinks " href="{{ item.enlace }} ">
+                        <fa-icon [icon]="item.icon"></fa-icon>{{item.name }}
+                    </a>
                 </div>
             </div>
         </div>
